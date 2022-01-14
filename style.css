@@ -1,3 +1,146 @@
+/* ----------Body Adjust------- */
 body{
     font-family: 'Karla', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(60, 100%, 100%);
+}
+
+/* ------------Navigation Bar------- */
+a{
+    text-decoration: none;
+}
+nav> ul> li{
+    list-style-type: none;
+}
+nav{
+    display: flex;
+}
+ul.anchor-button{
+    display: flex;
+    justify-content: right;
+}
+
+/* --------- Influencer First Part ----------- */
+.container{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 30px;
+}
+.products-Image img{
+    width: 330px;
+    background-image: url(./images/Circle\ design.svg);
+    background-size: 330px;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+.products-details{
+    margin-right: 100px;
+}
+.products-details>h1{
+    font-size: 40px;
+    margin-right: 250px;
+    margin-bottom: -10px;
+    color: green;
+}
+.products-details>p{
+    font-size: 20px;
+}
+.fas{
+    height: 25px;
+    width: 50px;
+    text-align: center;
+    align-items: center;
+    margin-top: 0;
+    font-size: 20px;
+}
+button{
+    width: 180px;
+    height: 40px;
+    font-size: 15px;
+    background-color: grey;
+    border: none;
+    border-radius: 20px;
+}
+
+/* --------Horzantal & Logo part---- */
+hr{
+    width: 80%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 30px;
+}
+
+/* -------Popular Collection Part---------- */
+.collection-heading{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
+.products-collection{
+    display: grid;
+    margin-top: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 180px;
+    margin-right: 180px;
+}
+.products-price-details{
+    border: 2px solid black;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+/* --------Featured products at place part------ */
+.featured-container{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+.featured-images img{
+    width: 350px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.featured-details{
+    margin-left: 80px;
+}
+.featured-details> h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+.featured-details> p{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+/* -----------influencer products bottom bar----------- */
+.influencer-products-container{
+    border: 2px solid yellow;
+    margin-top: 50px;
+    background-color: brown;
+    text-align: center;
+    height: 180px;
+}
+.influencer-products-container h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.influencer-products-container p{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+.influencer-products-container i{
+    color: white;
 }

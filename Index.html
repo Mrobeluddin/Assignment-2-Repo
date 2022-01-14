@@ -11,14 +11,17 @@
     <script src="https://kit.fontawesome.com/661cd738ad.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600&family=Poppins&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,600;1,800&family=Poppins&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <!--  -->
-    <header class="container">
-        <nav class="navigation">
+    <!----------------------------
+         Navigation Bar 
+         --------------------------------------->
+    <header>
+        <nav>
             <h1> Influencer products</h1>
             <ul class="anchor-button">
                 <li><a href="">Home</a></li>
@@ -30,21 +33,22 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <div>
+    <!---------- Influencer First Part ----------->
+    <section class="container">
+        <div class="products-details">
             <h1> Start your Journey as Influencer</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime dicta at animi temporibus neque repellat
                 molestias eligendi, sequi adipisci odio.</p>
             <a href=""><button> Preebook now<i class="fas fa-arrow-right"></i></button></a>
 
         </div>
-        <div>
-            <img src="./images/main-camera.png" alt="">
+        <div class="products-Image">
+            <img src=" /images/main-camera.png" alt="">
         </div>
     </section>
     <section>
         <hr>
-        <div>
+        <div class="logo">
             <img src="./logos/Alibaba.svg" alt="">
             <img src="./logos/Amazon.svg" alt="">
             <img src="./logos/Daraz.pk Logo.svg" alt="">
@@ -55,9 +59,9 @@
         </div>
         <hr>
     </section>
-    <section>
-        <h1>Popular Collection</h1>
-        <div>
+    <h1 class="collection-heading">Popular Collection</h1>
+    <section class="products-collection">
+        <div class="products-price-details">
             <img src="./images/tripod.png" alt="">
             <h2>Flex Tripod</h2>
             <h3>$50.48</h3>
@@ -69,7 +73,7 @@
             <p>4.99</p>
             <p>Wordwide shifting <br> available <br> Buyers protection possible</p>
         </div>
-        <div>
+        <div class="products-price-details">
             <img src="./images/mic.png" alt="">
             <h2>Microphone</h2>
             <h3>$120.25</h3>
@@ -81,7 +85,7 @@
             <p>4.99</p>
             <p>Wordwide shifting <br> available <br> Buyers protection possible</p>
         </div>
-        <div>
+        <div class="products-price-details">
             <img src="./images/airpod.png" alt="">
             <h2>Airbuds</h2>
             <h3>$100.00</h3>
@@ -93,7 +97,7 @@
             <p>4.99</p>
             <p>Wordwide shifting <br> available <br> Buyers protection possible</p>
         </div>
-        <div>
+        <div class="products-price-details">
             <img src="./images/drone.png" alt="">
             <h2>Drone</h2>
             <h3>$980.25</h3>
@@ -105,7 +109,7 @@
             <p>4.99</p>
             <p>Wordwide shifting <br> available <br> Buyers protection possible</p>
         </div>
-        <div>
+        <div class="products-price-details">
             <img src="./images/lights.png" alt="">
             <h2>Light Setup</h2>
             <h3>$1200.00</h3>
@@ -117,7 +121,7 @@
             <p>4.99</p>
             <p>Wordwide shifting <br> available <br> Buyers protection possible</p>
         </div>
-        <div>
+        <div class="products-price-details">
             <img src="./images/setup.png" alt="">
             <h2>Photoshoot set</h2>
             <h3>$820.40</h3>
@@ -129,7 +133,7 @@
             <p>4.99</p>
             <p>Wordwide shifting <br> available <br> Buyers protection possible</p>
         </div>
-        <div>
+        <div class="products-price-details">
             <img src="./images/camera.png" alt="">
             <h2>Vlogging Camera</h2>
             <h3>$1800.80</h3>
@@ -141,7 +145,7 @@
             <p>4.99</p>
             <p>Wordwide shifting <br> available <br> Buyers protection possible</p>
         </div>
-        <div>
+        <div class="products-price-details">
             <img src="./images/single-light.png" alt="">
             <h2>Green Screen</h2>
             <h3>$25.48</h3>
@@ -153,7 +157,7 @@
             <p>4.99</p>
             <p>Wordwide shifting <br> available <br> Buyers protection possible</p>
         </div>
-        <div>
+        <div class="products-price-details">
             <img src="./images/action.png" alt="">
             <h2>Action Camera</h2>
             <h3>$380.00</h3>
@@ -165,13 +169,17 @@
             <p>4.99</p>
             <p>Wordwide shifting <br> available <br> Buyers protection possible</p>
         </div>
-        <a href="">See More</a>
-        <i class="fas fa-arrow-right"></i>
-    </section>
-    <section>
-        <div><img src="./images/gear.png" alt="">
+
+        <div class="arrow">
+            <a href="">See More</a>
+            <i class="fas fa-arrow-right"></i>
         </div>
-        <div>
+    </section>
+    <section class="featured-container">
+        <div class="featured-images">
+            <img src="./images/gear.png" alt="">
+        </div>
+        <div class="featured-details">
             <h1>Featured products at one place</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis fuga sequi placeat maiores,
                 consequuntur, officiis asperiores aut distinctio, mollitia laborum fugiat nemo. Distinctio quo explicabo
@@ -179,7 +187,7 @@
             <a href=""><button>Join Now<i class="fas fa-arrow-right"></i></button></a>
         </div>
     </section>
-    <section>
+    <section class="influencer-products-container">
         <div>
             <h1>Influencer products</h1>
             <p>Copyright &copy; 2020 influencer products <br> All rights reserved</p>
