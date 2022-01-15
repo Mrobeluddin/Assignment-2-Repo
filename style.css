@@ -12,6 +12,9 @@ body{
     margin-left: 50px;
     color: green;
 }
+.icon i{
+    color: black;
+}
 .menu{
     display: flex;
     justify-content: flex-end;
@@ -45,7 +48,7 @@ body{
     margin-bottom: 50px;
 }
 .products-Image:hover img {
-    transform:skew(10deg);
+    transform: rotate(360deg);
     transition: transform 2s ease-in-out;
 }
 .products-details{
@@ -106,8 +109,7 @@ hr{
     justify-content: center;
 }
 .products-price-details:hover img{
-    transform:skew(10deg);
-    transition: transform 2s ease-in-out;
+    transform: scale(1.1);
 }
 
 .products-price-details{
@@ -118,7 +120,7 @@ hr{
     box-shadow: 10px 10px 5px;
     justify-content: center;
     align-items: center;
-    transition: 2s;
+    transition: all 1s;
 }
 .arrow {
     margin-top: 20px;
