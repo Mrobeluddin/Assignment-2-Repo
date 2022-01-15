@@ -52,14 +52,14 @@ body{
     margin-right: 100px;
 }
 .products-details>h1{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
     margin-right: 180px;
     margin-bottom: -10px;
     color: green;
 }
 .products-details>p{
-    font-size: 20px;
+    font-size: 15px;
 }
 .fas{
     width: 20px;
@@ -96,12 +96,12 @@ hr{
     font-size: 40px;
     margin-top: 50px;
 }
-.products-collection{
+.product-info{
     display: grid;
     margin-top: 60px;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 180px;
-    margin-right: 180px;
+    /* margin-left: 180px;
+    margin-right: 180px; */
     justify-content: center;
 }
 .products-price-details:hover img{
@@ -186,20 +186,36 @@ hr{
 
 /* Media---Mobile---Tab---Computer */
 @media only screen and (max-width:688px) {
+
+.product-info{
+    grid-template-columns: repeat(1, 1fr) !important; 
+    justify-content: center;
+    /* padding-left: 180px; */
+ }
+ .product p{
+    font-size: 16px;
+    text-align: justify;
+    width: 300px;
+    height: 104px;
+    margin-top: 0px;
+ }
+
     .container{
-        width: 100%;
+        /* width: 100%; */
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         padding: 20px;
-        margin: 0% auto;
+        margin-right: 80px;
     }
-    .logo{
-        grid-template-columns: repeat(1, 1fr);
+    .logo img{
+        grid-template-columns: repeat(1, 1fr) !important;
         justify-content: center;
-        padding: 20px;
-        width: 100%;
-        margin: 0% auto;
+       
+        /* padding: 20px;
+        width: 100%; */
+       
+        
     }
     .products-collection{
         /* width: 50%;
@@ -221,6 +237,9 @@ hr{
         margin: 0% auto;
         align-items: center;
     }
+    .influencer-products-container{
+        width: 100%;
+    }
 }
 
 
@@ -240,7 +259,7 @@ hr{
         width: 100%;
         margin: 0% auto;
 }
-.products-collection{
+.product-info{
     width: 100%;
     flex-direction: column;
     grid-template-columns: repeat(2, 1fr);
