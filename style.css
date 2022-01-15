@@ -99,9 +99,10 @@ hr{
 .product-info{
     display: grid;
     margin-top: 60px;
+
     grid-template-columns: repeat(3, 1fr);
-    /* margin-left: 180px;
-    margin-right: 180px; */
+    margin-left: 180px;
+    margin-right: 180px;
     justify-content: center;
 }
 .products-price-details:hover img{
