@@ -7,18 +7,26 @@ body{
 }
 
 /* ------------Navigation Bar------- */
-a{
+.heading{
+    font-size: 25px;
+    margin-left: 50px;
+    color: green;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    
+}
+.menu a{
     text-decoration: none;
+    padding: 20px;
+    color: black;
+    font-weight: 700px;
+
 }
-nav> ul> li{
-    list-style-type: none;
-}
-nav{
-    display: flex;
-}
-ul.anchor-button{
-    display: flex;
-    justify-content: right;
+.menu a:hover{
+    background-color: gainsboro;
 }
 
 /* --------- Influencer First Part ----------- */
@@ -35,13 +43,19 @@ ul.anchor-button{
     background-size: 330px;
     background-repeat: no-repeat;
     margin-bottom: 50px;
+    transition: 2s;
+}
+.products-Image:hover img {
+    transform:skew(10deg);
+    transition: transform 2s ease-in-out;
 }
 .products-details{
     margin-right: 100px;
 }
 .products-details>h1{
     font-size: 40px;
-    margin-right: 250px;
+    font-weight: 900;
+    margin-right: 180px;
     margin-bottom: -10px;
     color: green;
 }
@@ -49,12 +63,10 @@ ul.anchor-button{
     font-size: 20px;
 }
 .fas{
-    height: 25px;
-    width: 50px;
-    text-align: center;
-    align-items: center;
+    width: 20px;
     margin-top: 0;
     font-size: 20px;
+    color: goldenrod;
 }
 button{
     width: 180px;
@@ -67,15 +79,15 @@ button{
 
 /* --------Horzantal & Logo part---- */
 hr{
-    width: 80%;
+    width: 75%;
 }
 .logo{
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-top: 30px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 160px;
+    margin-right: 160px;
     margin-bottom: 30px;
 }
 
@@ -91,36 +103,55 @@ hr{
     grid-template-columns: repeat(3, 1fr);
     margin-left: 180px;
     margin-right: 180px;
+    justify-content: center;
 }
+.products-price-details:hover img{
+    transform:skew(10deg);
+    transition: transform 2s ease-in-out;
+}
+
 .products-price-details{
-    border: 2px solid black;
+    border: 1px solid #f0e2e2;
     padding: 15px;
     margin: 15px;
     border-radius: 15px;
+    box-shadow: 10px 10px 5px;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+.arrow {
+    margin-top: 20px;
+    margin-bottom: 20px;
+   text-align: end;
+   margin-right: 180px;
 }
 
+
 /* --------Featured products at place part------ */
-.featured-container{
+.mechanical-container{
     display: flex;
     margin-top: 50px;
     margin-left: 180px;
     margin-right: 180px;
 }
-.featured-images img{
-    width: 350px;
+.mechanical-images img{
+    width: 400px;
     margin-left: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
+    border-radius: 15px;
 }
-.featured-details{
+.mechanical-details{
     margin-left: 80px;
 }
-.featured-details> h1{
-    font-size: 35px;
+.mechanical-details> h1{
+    font-size: 30px;
     font-weight: bold;
 }
-.featured-details> p{
-    font-size: 20px;
+.mechanical-details p{
+    font-size: 16px;
     margin-right: 20px;
+   white-space: normal;
 }
 
 /* -----------influencer products bottom bar----------- */
@@ -143,4 +174,85 @@ hr{
 }
 .influencer-products-container i{
     color: white;
+    float: left;
+}
+.items{
+    justify-content: right;
+    align-items: center;
+}
+
+
+
+
+
+
+/* Media---Mobile---Tab---Computer */
+@media (max-width: 576px) {
+    .container{
+        width: 100%;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        padding: 20px;
+        margin: 0% auto;
+    }
+    .logo{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        padding: 20px;
+        width: 100%;
+        margin: 0% auto;
+    }
+    .products-collection{
+        width: 100%;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        padding: 20px;
+        margin: 0% auto;
+    }
+    .mechanical-container{
+        width: 100%;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        padding: 30px;
+        margin: 0% auto;
+        align-items: center;
+    }
+}
+
+
+@media(max-width: 768px) {
+    .container{
+        width: 100%;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        padding: 20px;
+        margin: 0% auto;
+    } 
+    .logo{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        padding: 20px;
+        width: 100%;
+        margin: 0% auto;
+}
+.products-collection{
+    width: 100%;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding: 20px;
+    margin: 0% auto;
+}
+.mechanical-container{
+    width: 100%;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    padding: 30px;
+    margin: 0% auto;
+    align-items: center;
 }
