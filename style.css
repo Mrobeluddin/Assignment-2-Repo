@@ -43,7 +43,6 @@ body{
     background-size: 330px;
     background-repeat: no-repeat;
     margin-bottom: 50px;
-    transition: 2s;
 }
 .products-Image:hover img {
     transform:skew(10deg);
@@ -174,7 +173,6 @@ hr{
 }
 .influencer-products-container i{
     color: white;
-    float: left;
 }
 .items{
     justify-content: right;
@@ -187,17 +185,17 @@ hr{
 
 
 /* Media---Mobile---Tab---Computer */
-@media (max-width: 576px) {
+@media only screen and(max-width: 576px) {
     .container{
         width: 100%;
         flex-direction: column;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
         justify-content: center;
         padding: 20px;
         margin: 0% auto;
     }
     .logo{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         justify-content: center;
         padding: 20px;
         width: 100%;
@@ -206,7 +204,7 @@ hr{
     .products-collection{
         width: 100%;
         flex-direction: column;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1;
         justify-content: center;
         padding: 20px;
         margin: 0% auto;
@@ -223,7 +221,7 @@ hr{
 }
 
 
-@media(max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .container{
         width: 100%;
         flex-direction: column;
